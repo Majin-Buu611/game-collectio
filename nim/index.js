@@ -19,6 +19,7 @@ function removeStone(amount) {
 function reset() {
   stones = 21;
   updateDisplay();
+  logMove("Game reset.");
 }
 
 function logMove(message) {
@@ -27,6 +28,10 @@ function logMove(message) {
   entry.textContent = message;
   logEntries.appendChild(entry);
   logEntries.scrollTop = logEntries.scrollHeight;
+}
+
+function clearLog() {
+  logEntries.innerHTML = "";
 }
 
 updateDisplay();
