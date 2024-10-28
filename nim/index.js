@@ -1,6 +1,6 @@
 const stonesAmount = document.getElementById("stonesAmount");
 let stones = 21
-let logEntries = document.getElementById("log-entries");
+const logEntries = document.getElementById("log-entries");
 
 function updateDisplay() {
     stonesAmount.textContent = stones;
@@ -26,6 +26,7 @@ function logMove(message) {
   entry.className = "log-entry";
   entry.textContent = message;
   logEntries.appendChild(entry);
+  logEntries.scrollTop = logEntries.scrollHeight;
 }
 
 updateDisplay();
