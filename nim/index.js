@@ -1,4 +1,4 @@
-var stonesAmount = Document.getElementById("stones amount");
+var stonesAmount = document.getElementById("stones amount");
 var stones = 21
 
 function updateDisplay() {
