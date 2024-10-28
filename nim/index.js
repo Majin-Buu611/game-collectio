@@ -6,7 +6,10 @@ function updateDisplay() {
 }
 
 function removeStone(amount) {
-  stones -= amount;
+  if (amount < 1) amount = 1;
+  if (amount <= stones) {
+    stones -= amount;
+  }
   updateDisplay();
 }
 
