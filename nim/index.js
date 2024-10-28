@@ -9,7 +9,7 @@ function updateDisplay() {
 function removeStone(amount) {
   if (amount < 1) return;
   if (amount <= stones) {
-    if (stones -= amount >= 0) {
+    if (stones - amount >= 0) {
       stones -= amount;
     } else {
       logMove("Atempted to remove more stones than there are on pile.");
