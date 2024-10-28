@@ -11,7 +11,7 @@ function removeStone(amount) {
   if (amount <= stones) {
     stones -= amount;
     if (stones < 0) stones = 0;
-    logMove("Player removes ${amount} stones from the pile.");
+    logMove(`Player removes ${amount} stones from the pile.`);
   }
   updateDisplay();
 }
