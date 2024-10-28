@@ -7,6 +7,7 @@ function updateDisplay() {
 
 function removeStone(amount) {
   stones -= amount;
+  updateDisplay();
 }
 
 function reset() {
