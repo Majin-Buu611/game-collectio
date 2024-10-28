@@ -1,17 +1,17 @@
-var displayAmount = Document.getElementById("display amount");
-var stonesAmount = 21
+var stonesAmount = Document.getElementById("stones amount");
+var stones = 21
 
 function updateDisplay() {
-    displayAmount.textContent = stonesAmount;
+    stonesAmount.textContent = stones;
 }
 
 function removeStone(amount) {
-  stonesAmount - amount;
+  stones -= amount;
 }
 
 function reset() {
-  stonesAmount = 21;
+  stones = 21;
   updateDisplay();
 }
 
-updateText();
+updateDisplay();
