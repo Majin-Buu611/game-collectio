@@ -9,6 +9,7 @@ function removeStone(amount) {
   if (amount < 1) amount = 1;
   if (amount <= stones) {
     stones -= amount;
+    if (stones < 0) stones = 0;
   }
   updateDisplay();
 }
