@@ -12,6 +12,8 @@ function removeStone(amount) {
     if (stones - amount >= 0) {
       stones -= amount;
       logMove(`Player removes ${amount} stones from pile.`);
+      logMove(`AI removes ${stones - (stones % 4)} from pile..`);
+      stones-=(stones % 4);
     } else {
       logMove("Atempted to remove more stones than there are on pile.");
     }
